@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Cine Crítica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sytle.css">
+    <link rel="icon" href="./img/logo.png">
+</head>
+
+<body>
+    <div class="background-overlay"></div>
+
+    <div class="login-container">
+        <div class="login-box">
+            <h1 class="login-title" id="form-title">Entrar</h1>
+            <p class="login-subtitle">Sua fonte para melhores e mais recentes reviews.</p>
+
+            <form class="login-form" id="auth-form">
+                <input type="email" id="email" placeholder="Email" required>
+
+                <div class="password-group">
+                    <input type="password" id="password" placeholder="Senha" required>
+                    <label class="remember-me">
+                        <input type="checkbox" checked>
+                        Lembrar de mim
+                    </label>
+                </div>
+
+                <button type="submit" id="submit-btn" class="btn-login">Entrar</button>
+
+                <p id="error-message" class="error-msg"></p>
+
+                <div class="options">
+                    <a href="#" class="need-help" id="help-btn">Precisa de ajuda?</a>
+                    <label class="sign-up-now">
+                        <input type="checkbox" id="toggle-mode" style="display:none;">
+                        <span id="toggle-text">Novo por aqui? <b>Assine agora.</b></span>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de Ajuda -->
+    <div id="help-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Precisa de Ajuda?</h2>
+                <button class="modal-close" id="close-help">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="help-section">
+                    <h3>🔐 Criar uma Conta</h3>
+                    <p>Clique em "Novo por aqui? Assine agora" para alternar para o modo de cadastro. Insira um email e uma senha segura, depois clique em "Cadastrar".</p>
+                </div>
+                <div class="help-section">
+                    <h3>🔑 Fazer Login</h3>
+                    <p>Digite seu email e senha cadastrados. Você pode marcar "Lembrar de mim" para manter sua sessão ativa.</p>
+                </div>
+                <div class="help-section">
+                    <h3>📝 Reviews e Críticas</h3>
+                    <p>Após fazer login, você terá acesso aos formulários de avaliação de filmes. Deixe suas críticas e notas sobre seus filmes favoritos!</p>
+                </div>
+                <div class="help-section">
+                    <h3>⭐ Sistema de Avaliação</h3>
+                    <p>Use as estrelas para dar notas de 1 a 5. Quanto maior a nota, melhor sua avaliação do filme.</p>
+                </div>
+                <div class="help-section">
+                    <h3>💾 Dados Seguros</h3>
+                    <p>Suas críticas e dados são armazenados com segurança. Você pode visualizar todas as suas avaliações a qualquer momento.</p>
+                </div>
+                <div class="help-section">
+                    <h3>❓ Problemas?</h3>
+                    <p>Se encontrar erros ao criar conta ou fazer login, verifique se seus dados estão corretos. Certifique-se que o email é válido e a senha tem pelo menos 6 caracteres.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-close-modal" id="close-help-btn">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
